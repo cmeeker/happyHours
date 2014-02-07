@@ -8,7 +8,7 @@
 
 ArtCar.create([
 	{ 
-		name: 'Pyrobar', 
+		name: 'S', 
 		hometown: 'Santa Barbara, CA', 
 		power_source: 'Gasoline',
 		flame_effects: true,
@@ -38,5 +38,13 @@ ArtCar.create([
 		flame_effects: true,
 		street_legal: true,
 		photo_url: 'cupcake.jpg'
+	},
+		{
+		name: 'The Flying Wombat',
+		hometown: 'Graceland', 
+		power_source: 'E',
+		flame_effects: true,
+		street_legal: true,
+		photo_url: 'pirate.jpg'
 	}
 ])

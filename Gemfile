@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
+gem 'rails_12factor'
 # gem 'mongoid'
 
 # Use SCSS for stylesheets
