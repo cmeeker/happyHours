@@ -1,0 +1,14 @@
+<tr>
+	<td><%= link_to happy_hour.name, happy_hour %></td>
+	<td><%= happy_hour.hometown %></td>
+	<td><%= happy_hour.address %></td>
+	
+	<td><%= image_tag(happy_hour.photo_url, size: '160x120') %>
+	</td>
+	<td><%= link_to "Edit", edit_happy_hour_path(happy_hour)%>
+	</td>
+
+	<% if current_user %>
+		<td><%= button_to "Delete", happy_hour_path(happy_hours), {method: :desteroy, confirm: "Dude are you sure????"}%></td>
+	<% end %>
+</tr>

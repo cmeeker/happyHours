@@ -1,9 +1,9 @@
-BurningMan::Application.routes.draw do
-  resources :art_cars, only: [:index, :show, :create, :new, :edit, :update, :destroy]
+HappyHourz::Application.routes.draw do
+  resources :happy_hours, only: [:index, :show, :create, :new, :edit, :update, :destroy]
   resources :users, only: [:index, :new]
-  resource :auth, only: [:new, :create, :destroy]
+  resource :auth, only: [:new, :create,]
 
-  root to: 'art_cars#index'
+  root to: 'happy_hours#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

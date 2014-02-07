@@ -13,16 +13,43 @@
  */
 
 html {
-	background: url(/assets/temple.jpg) fixed;
+	background-color: white	;
 	background-size: 100%;
 
 
 }
+ a {
+ 	text-decoration: none; 
+ 	font-family: arial;
+
+ }
+ a:hover{
+ 
+ 	background-color: lime;
+ }
+.login{
+	height:30px;
+	width:60px;
+	line-height: 30px;
+	color:lime;
+	background-color: white;
+	border: 2px solid lime;
+	border-radius: 3px;
+	text-align: center;
+
+
+
+}
+.login:hover{
+	background-color: lime;
+	opacity:0.5;
+	color: white;	
+}
 
 body { 
 	
-	width: 880px;
-	margin: auto;
+	width: auto;
+	margin: auto;4
 	background: rgba(255, 255, 255, 0.8);
 }
 

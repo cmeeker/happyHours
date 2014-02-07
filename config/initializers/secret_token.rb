@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-BurningMan::Application.config.secret_key_base = '20b9c50cf15f2b27c3aa063321ea8dabea429a0c526db8dbbfd1d00dfba3cb7af222f1dd6d62eff9b4efe8b0a958cd109700a92fc28c50bd07147204fa05dee3'
+HappyHourz::Application.config.secret_key_base = '20b9c50cf15f2b27c3aa063321ea8dabea429a0c526db8dbbfd1d00dfba3cb7af222f1dd6d62eff9b4efe8b0a958cd109700a92fc28c50bd07147204fa05dee3'

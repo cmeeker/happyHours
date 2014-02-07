@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-BurningMan::Application.load_tasks
+HappyHour::Application.load_tasks

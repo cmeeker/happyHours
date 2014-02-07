@@ -1,0 +1,13 @@
+<%= link_to 'Back happy hours', happy_hours_path %>
+<h1><%= @happy_hour.name %></h1>
+
+<dt>Hometown</dt>
+<dd><%= @happy_hour.hometown %></dd>
+
+<dt>Address</dt>
+<dd><%= @happy_hour.address %></dd>
+
+
+
+<dt>Photo</dt>
+<dd><%= image_tag @happy_hour.photo_url, size: '800x600' %></dd>x

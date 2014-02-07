@@ -1,0 +1,23 @@
+<%= form_for @happy_hour do |f| %>
+	<div>
+		<%= f.label :name %><br />
+		<%= f.text_field :name %>
+	</div>
+
+	<div>
+		<%= f.label :hometown %><br />
+		<%= f.text_field :hometown %>
+	</div>
+
+	<div>
+		<%= f.label :address %><br />
+		<%= f.text_field :address %>
+	</div>
+
+	<div>
+		<%= f.label :photo_url %><br />
+		<%= f.text_field :photo_url %>
+	</div>
+
+	<div><%= f.submit %><%= button_to "Cancel", new_happy_hour_path, :id => "open-contacts-dialog-btn", :class => "inbox-sf-add-btn tip", :method => :get %></div>
+<% end %>
