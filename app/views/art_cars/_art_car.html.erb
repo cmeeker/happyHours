@@ -1,0 +1,12 @@
+<tr>
+	<td><%= link_to art_car.name, art_car %></td>
+	<td><%= art_car.hometown %></td>
+	<td><%= art_car.power_source %></td>
+	<td class="flame <%= art_car.flame_effects ? 'yes' : '' %>"></td>
+	<td class="street <%= art_car.street_legal ? 'yes' : '' %>"></td>
+	<td><%= image_tag(art_car.photo_url, size: '160x120') %></td>
+	<td><%= link_to "Edit", edit_art_car_path(art_car)%></td>
+	<% if current_user %>
+		<td><%= button_to "Delete", art_car_path(art_car), {method: :delete, confirm: "Dude are you sure????"}%></td>
+	<% end %>
+</tr>

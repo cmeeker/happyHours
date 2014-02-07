@@ -1,0 +1,33 @@
+<%= form_for @art_car do |f| %>
+	<div>
+		<%= f.label :name %><br />
+		<%= f.text_field :name %>
+	</div>
+
+	<div>
+		<%= f.label :hometown %><br />
+		<%= f.text_field :hometown %>
+	</div>
+
+	<div>
+		<%= f.label :power_source %><br />
+		<%= f.select :power_source, ['Gasoline', 'Diesel', 'Electric', 'Natural Gas', 'other'] %>
+	</div>
+
+		<div>
+			<%= f.label :flame_effects %><br />
+			<%= f.check_box :flame_effects %>
+		</div>
+
+		<div>
+			<%= f.label :street_legal %><br />
+			<%= f.check_box :street_legal %>
+		</div>
+
+	<div>
+		<%= f.label :photo_url %><br />
+		<%= f.text_field :photo_url %>
+	</div>
+
+	<div><%= f.submit %></div>
+<% end %>

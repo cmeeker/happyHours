@@ -1,0 +1,18 @@
+<h1>ArtCars</h1>
+<table id="art-car-table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Hometown</th>
+			<th>Power source</th>
+			<th>Flame effects</th>
+			<th>Street legal</th>
+			<th>Thumbnail</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%= render @art_cars %>
+	</tbody>
+</table>
+
+<%= link_to "Add art car", new_art_car_path %>

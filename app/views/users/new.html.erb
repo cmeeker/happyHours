@@ -1,0 +1,12 @@
+<% if current_user %>
+	Whoa Nelly! You're already logged in!!
+<% end %>
+
+<div class="createuser">
+	<h1>Create a New User</h1>
+	<%=form_for @user do |user|%>
+		<%=user.text_field :username, :placeholder => "Enter your username"%><br>
+		<%=user.password_field :password, :placeholder => "Enter password" %><br>
+	<%= user.submit "Create New User" %>
+	<% end %>
+</div>
