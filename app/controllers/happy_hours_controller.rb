@@ -40,9 +40,10 @@ class HappyHoursController < ApplicationController
   end
 
   def destroy
-  	hh = HappyHour.find(params[:id])
-  	hh.destroy
-		redirect_to happy_hours_path
+  	@happy_hour = HappyHour.find(params[:id])
+    @happy_hour.destroy
+  
+
   end
 
   private

@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 	end
 
 	def create
-		User.create(params.require(:user).permit(:username, :password))
+		User.create(params.require(:user).permit(:username, :password, :name))
 		redirect_to action: 'index'
 	end
 end

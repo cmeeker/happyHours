@@ -3,6 +3,7 @@ class User
   include Mongoid::Document
   field :username, type: String
   field :hashed_password, type: String
+  field :name, type: String
 
   def password=(arg)
   	salt = BCrypt::Engine.generate_salt

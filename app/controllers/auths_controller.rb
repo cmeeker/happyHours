@@ -8,12 +8,12 @@ class AuthsController < ApplicationController
 		if user.authenticates_with_password?(params[:user][:password])
 			session[:user_id] = user.id
 			flash[:notice] = "Welcome, #{current_user.username}!"
-			redirect_to art_cars_path
+			redirect_to happy_hours_path
 		end
 	end
 
 	def destroy
 	  session[:user_id] = nil
-	  redirect_to art_cars_path
+	  redirect_to happy_hours_path
 	end
 end

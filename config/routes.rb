@@ -1,7 +1,7 @@
 HappyHourz::Application.routes.draw do
   resources :happy_hours, only: [:index, :show, :create, :new, :edit, :update, :destroy]
-  resources :users, only: [:index, :new]
-  resource :auth, only: [:new, :create,]
+  resources :users, only: [:index, :new, :create, :destroy]
+  resource :auth, only: [:new, :create, :destroy]
 
   root to: 'happy_hours#index'
   # The priority is based upon order of creation: first created -> highest priority.

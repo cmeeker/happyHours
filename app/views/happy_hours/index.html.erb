@@ -1,22 +1,25 @@
+
+
 <div class="container"> 
 </div>
 
-<h1 style = "text-align:center;">Happy Hours</h1>
+
+<h1>Happy Hours</h1>
 <table id="happy-hour-table">
 	<thead>
 		<tr>
 			<th>Restaurant</th>
 			<th>Address</th>
 			<th>Happy Hour Times</th>
-
 			<th>Menu</th>
 		</tr>
 	</thead>
 	<tbody>
-		<%= render @happy_hours %>
+<%= render @happy_hours %> 
 	</tbody>
 </table>
 
 
 
-<%= button_to "Create New Happy Hour Spot", new_happy_hour_path, :id => "open-contacts-dialog-btn", :class => "inbox-sf-add-btn tip", :method => :get %>
+<%= button_to "Create New Happy Hour Spot", new_happy_hour_path,  :method => :get %>
+
