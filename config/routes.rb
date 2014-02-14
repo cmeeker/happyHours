@@ -1,4 +1,8 @@
 HappyHourz::Application.routes.draw do
+    get "welcome/login"
+    get "login/stripe"
+
+
   resources :happy_hours, only: [:index, :show, :create, :new, :edit, :update, :destroy]
   resources :users, only: [:index, :new, :create, :destroy]
   resource :auth, only: [:new, :create, :destroy]

@@ -1,6 +1,6 @@
 /*aa*/
 
-.container{
+/*.containor{
  	background-image: url('http://imgur.com/C6dV1w5') repeat center;
  	height: 200px;
  	width: auto;
@@ -11,7 +11,7 @@
 
 	table#happy-hour-table {
 		width: auto;
-		padding: 10px;
+		padding: 100px;
 		&.th {
 
 			text-align: left;
@@ -28,4 +28,4 @@ dt, dd {
 dd {
 	font-family: bold;
 	margin-bottom: 1em;
-}
+}*/
