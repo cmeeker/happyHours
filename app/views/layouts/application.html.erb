@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>HappyHourHunter</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-  
-</head>
-<body>
-	<header>
-		<%= render 'layouts/navigation' %>
-	</header>
-	<p class="notice"><%= flash[:notice] %></p>
-	<p class="error"><%= flash[:error] %></p>
-	<%= yield %>
-</body>
+	<head>
+	  <title>HappyHourHunter</title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= csrf_meta_tags %>
+	  
+	</head>
+	<body>
+		<header>
+			<%= render 'layouts/navigation' %>
+		</header>
+		<p class="notice"><%= flash[:notice] %></p>
+		<p class="error"><%= flash[:error] %></p>
+		<%= yield %>
+	</body>
 </html>
